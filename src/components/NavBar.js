@@ -5,6 +5,7 @@ import Facebook from "../assets/facebook-app-round-white-icon.svg";
 import Linkedin from "../assets/linkedin-app-white-icon.svg";
 import { BrowserRouter as Router } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import logo from "../assets/A.mp4";
 
 function NavBar() {
   const [activeLink, setActiveLink] = useState("home");
@@ -32,9 +33,11 @@ function NavBar() {
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
-          <video autoPlay loop muted>
-            <source src="/videos/logo.mp4" type="video/mp4" />
-          </video>
+          <div className="navbar-logo">
+            <video autoPlay loop muted>
+              <source src={logo} type="video/mp4" />
+            </video>
+          </div>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
