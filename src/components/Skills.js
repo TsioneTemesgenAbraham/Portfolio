@@ -1,29 +1,40 @@
-import Card from "react-bootstrap/Card";
-const skillsData = [
-  { id: 1, name: "HTML" },
-  { id: 2, name: "CSS" },
-  { id: 3, name: "JavaScript" },
-  { id: 4, name: "React.js" },
-  { id: 5, name: "Node.js" },
-  { id: 6, name: "Express.js" },
-  { id: 7, name: "MongoDB" },
-  { id: 8, name: "SQL" },
-  { id: 9, name: "Python" },
-  { id: 10, name: "Git" },
-  { id: 11, name: "Bootstrap" },
-  { id: 12, name: "PostgreSQL" },
-  { id: 13, name: "Heroku" },
-  { id: 14, name: "" },
-];
+import htmlsvg from "../assets/Htmlp.svg";
+import css from "../assets/CSS.svg";
+import bootstrapsvg from "../assets/Bootstrap.png";
+import jspng from "../assets/JS.svg";
+import nodepng from "../assets/Nodej.svg";
+import psqlpng from "../assets/PSQL.svg";
+import reactpng from "../assets/reactpng.svg";
+import gitpng from "../assets/Git.svg";
 
 function Skills() {
   return (
-    <div className="skills-grid">
-      {skillsData.map((skill) => (
-        <div key={skill.id} className="skill-card">
-          <p>{skill.name}</p>
-        </div>
-      ))}
+    <div className="so-icon">
+      <h1 className="skill-h1">Skills</h1>
+      <a>
+        <img src={htmlsvg} alt="Icon" />
+      </a>
+      <a>
+        <img src={css} alt="Icon" />
+      </a>
+      <a>
+        <img src={bootstrapsvg} alt="Icon" />
+      </a>
+      <a>
+        <img src={jspng} alt="Icon" />
+      </a>
+      <a>
+        <img src={nodepng} alt="Icon" />
+      </a>
+      <a>
+        <img src={psqlpng} alt="Icon" />
+      </a>
+      <a>
+        <img src={reactpng} alt="Icon" />
+      </a>
+      <a>
+        <img src={gitpng} alt="Icon" />
+      </a>
     </div>
   );
 }
