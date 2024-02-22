@@ -5,15 +5,16 @@ function Poster() {
   const [lupnum, setLupnum] = useState(0);
   const [isDeleted, setIsDeleted] = useState(false);
   const toChange = [
-    "Software Developer",
+    "I am Tsione Abraham",
+    "I am Software Developer",
     "FullStack Developer",
     "Frontend Developer",
     "Backend Developer",
   ];
   const [text, setText] = useState("");
   const [index, setIndex] = useState(1);
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const period = 1000;
+  const [delta, setDelta] = useState(400 - Math.random() * 100);
+  const period = 2000;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -29,8 +30,8 @@ function Poster() {
     let i = lupnum % toChange.length;
     let fullText = toChange[i];
     let updatedText = isDeleted
-      ? fullText.substring(0, text.length - 1)
-      : fullText.substring(0, text.length + 1);
+      ? fullText.substring(0, text.length - 2)
+      : fullText.substring(0, text.length + 2);
 
     setText(updatedText);
 
@@ -59,12 +60,11 @@ function Poster() {
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Hi there!</span>
             <h1>
-              I am Tsione Abraham, <span className="wrap">{text}</span>
+              '<span className="wrap">{text}</span>'
             </h1>
             <p>
               {" "}
-              A Full-Stack Developer/ Front End Developer/ Back End Developer. I
-              specialize in creating websites that are not only visually
+              I specialize in creating websites that are not only visually
               stunning but also user-friendly and functional.
             </p>
             <button onClick={() => console.log("connect")}></button>
