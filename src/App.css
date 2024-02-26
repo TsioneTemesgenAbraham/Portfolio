@@ -385,14 +385,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* Skills */
 
 
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 10px;
-  padding: 50px;
-  position: relative;
-  justify-content: center;
-}
+
 
 .skill-card {
   display: flex;
@@ -402,7 +395,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: #0d0c0c;
   border: 1px solid #ddd;
   border-radius: 10px;
-  padding: 12px;
+  /* padding: 12px; */
   box-shadow: 0 2px 4px rgba(224, 220, 220, 0.1);
   text-align: center;
   /* width: 10px;  */
@@ -420,7 +413,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 20px;
 }
 
-.so-icon a {
+
+
+.a-icon {
   width: 60px;
   height: 60px;
   background-color:hsl(300, 4%, 10%);
@@ -432,10 +427,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: 1.3px solid rgba(255, 255, 255, 0.5);
 }
 
+
 .so-icon {
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 18%;
+  padding-right: 18%;
 }
+
 
 
 @media screen and (max-width: 768px) {
@@ -453,6 +450,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 
 /* Projects */
+
 .project {
   padding: 80px 0;
   position: relative;
@@ -471,8 +469,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   line-height: 1.5em;
   margin: 14px auto 30px auto;
-  /* text-align: center; */
-  width: 56%;
+  width: 76%;
 }
 
 .proj-imgbx {
@@ -480,6 +477,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+}
+
+.proj-imgbx img{
+  height: 180px;
 }
 
 .proj-imgbx::before {
@@ -512,30 +513,39 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 1;
 }
 
-.proj-txtx h4 {
-  font-size: 30px;
+.proj-txtx h4 a {
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.1em;
+  color:#000;
 }
 
 .proj-txtx span {
   font-style: italic;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 11px;
   letter-spacing: 0.8px;
+  max-height: 200px;
+  overflow-y: auto;
 }
+
+.proj-txtx span::-webkit-scrollbar {
+  display: hidden;
+}
+
 
 @media screen and (max-width: 768px) {
     .project h2 {
       font-size: 26px;
     }
 
-    .project p {
+    .project span {
       color: #fff;
       font-size: 16px;
       margin: 14px auto 30px auto;
       width: 79%;
+      max-height: none;
     }
 
     .proj-imgbx {
@@ -591,10 +601,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* form */
 
-.form{
+.form {
   text-align: center;
   padding-left: 20%;
   padding-right: 20%;
+  margin-bottom: 40px;
 }
 
 .form button{
@@ -609,7 +620,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.3s ease-in-out;
 }
 
+
+
 @media screen and (max-width: 768px) {
+
     .form {
       text-align: center;
       padding-left: 20%;
@@ -630,3 +644,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
       margin-bottom: 40px;
     }
   }
+
+
+  /* Footer */
+
+
+.footer{
+  text-align: center;
+ 
+}
+
+
+
+.footer p {
+  margin-top: 15px;
+}
