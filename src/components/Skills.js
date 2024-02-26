@@ -9,32 +9,16 @@ import gitpng from "../assets/Git.svg";
 
 function Skills() {
   return (
-    <div className="so-icon">
+    <div className="so-icon" id="skills">
       <h1 className="skill-h1">Skills</h1>
-      <a>
-        <img src={htmlsvg} alt="Icon" />
-      </a>
-      <a>
-        <img src={css} alt="Icon" />
-      </a>
-      <a>
-        <img src={bootstrapsvg} alt="Icon" />
-      </a>
-      <a>
-        <img src={jspng} alt="Icon" />
-      </a>
-      <a>
-        <img src={nodepng} alt="Icon" />
-      </a>
-      <a>
-        <img src={psqlpng} alt="Icon" />
-      </a>
-      <a>
-        <img src={reactpng} alt="Icon" />
-      </a>
-      <a>
-        <img src={gitpng} alt="Icon" />
-      </a>
+      <img src={htmlsvg} className="a-icon" alt="Icon" />
+      <img src={css} className="a-icon" alt="Icon" />
+      <img src={bootstrapsvg} className="a-icon" alt="Icon" />
+      <img src={jspng} className="a-icon" alt="Icon" />
+      <img src={nodepng} className="a-icon" alt="Icon" />
+      <img src={psqlpng} className="a-icon" alt="Icon" />
+      <img src={reactpng} className="a-icon" alt="Icon" />
+      <img src={gitpng} className="a-icon" alt="Icon" />
     </div>
   );
 }
