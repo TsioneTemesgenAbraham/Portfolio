@@ -6,15 +6,19 @@ import TrackVisibility from "react-on-screen";
 function Projects() {
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "STAR APP",
+      description:
+        "An app where students can record the skills based on the STAR(Situation, Task, Action and Result) method.",
       imgUrl: require("../assets/Star.png"),
+      href: "https://cyf-tsionetemesgenabraham-tv.netlify.app/",
       alt: "",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: require("../assets/Star.png"),
+      title: "TV Show",
+      description:
+        "An App where you can search for TV shows or select from the dropdown menu.",
+      imgUrl: require("../assets/T.png"),
+      href: "https://cyf-tsionetemesgenabraham-tv.netlify.app/",
       alt: "",
     },
   ];
@@ -25,38 +29,34 @@ function Projects() {
         <Row>
           <Col size={12}>
             <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
-                  <h2>Projects</h2>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
-                  </p>
-                  <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                    <Tab.Content
-                      id="slideInUp"
-                      className={
-                        isVisible ? "animate__animated animate__slideInUp" : ""
-                      }
-                    >
-                      <Tab.Pane eventKey="first">
-                        <Row>
-                          {projects.map((project, index) => {
-                            return <PCards key={index} {...project} />;
-                          })}
-                        </Row>
-                      </Tab.Pane>
-                    </Tab.Content>
-                  </Tab.Container>
-                </div>
-              )}
+              <div>
+                <h2>Projects</h2>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.
+                </p>
+                <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                  <Tab.Content>
+                    <Tab.Pane eventKey="first">
+                      <Row>
+                        {projects.map((project, index) => {
+                          return <PCards key={index} {...project} />;
+                        })}
+                      </Row>
+                    </Tab.Pane>
+                  </Tab.Content>
+                </Tab.Container>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.
+                </p>
+              </div>
             </TrackVisibility>
           </Col>
         </Row>
