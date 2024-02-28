@@ -383,10 +383,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /* Skills */
-
-
-
-
+ 
 .skill-card {
   display: flex;
   flex-direction: column;
@@ -407,7 +404,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #333;
 }
 
-.skill-h1{
+.skill-h1 {
   font-weight: 600;
   text-align: center;
   margin: 20px;
@@ -468,7 +465,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
-  margin: 14px auto 30px auto;
+  margin: 30px auto 30px auto;
   width: 76%;
 }
 
@@ -477,10 +474,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .proj-imgbx img{
-  height: 180px;
+  height: 230px;
 }
 
 .proj-imgbx::before {
@@ -515,16 +514,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .proj-txtx h4 a {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.8px;
   line-height: 1.1em;
-  color:#000;
+  color:#f8f1f1;
 }
 
 .proj-txtx span {
   font-style: italic;
   font-weight: 400;
-  font-size: 11px;
+  font-size: 16px;
   letter-spacing: 0.8px;
   max-height: 200px;
   overflow-y: auto;
